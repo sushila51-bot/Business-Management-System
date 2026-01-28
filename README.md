@@ -1,24 +1,29 @@
-# Read Me First
-The following was discovered as part of building this project:
+Installation :
+Clone the repository : $ git clone https://github.com/SuhasKamate/Business_Management_Project.git
 
-* The JVM level was changed from '11' to '17', review the [JDK Version Range](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions#jdk-version-range) on the wiki for more details.
+Import the project inside STS/Eclipse :
 
-# Getting Started
+Open STS/Eclipse > file > import > maven > existing project > browse > finish .
+Make sure you are in the Business_Management_Project directory.
 
-### Reference Documentation
-For further reference, please consider the following sections:
+packageExplorer
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.3/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.3/maven-plugin/reference/html/#build-image)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.1.3/reference/htmlsingle/index.html#using.devtools)
-* [Thymeleaf](https://docs.spring.io/spring-boot/docs/3.1.3/reference/htmlsingle/index.html#web.servlet.spring-mvc.template-engines)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.3/reference/htmlsingle/index.html#web)
+4.Configure the database connection is application.properties (check the Database section for more information).
 
-### Guides
-The following guides illustrate how to use some features concretely:
+5.Run the project (by running main method is BusinessProjectApplication.java) OR right clink on the project > Run As > Spring Boot App.
 
-* [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+6.Open http://localhost:2330/home in any browser.
+
+7.Now your tables will be created in the databse.
+
+You have to add one admin data manually to login as admin, So add one admin data.
+Database :
+MySQL can be used as the database for this project. The database connection can be configured in the application.properties file, with the appropriate values for the following properties:
+
+spring.datasource.name=[Your Database Name]
+spring.datasource.url=jdbc:mysql://localhost:3306/[Your Database Name]
+spring.datasource.password=[Your password]
+spring.datasource.username=[Your username]
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+server.port=2330[Optional]
