@@ -1,7 +1,7 @@
 # **#Installation**
 
 Clone the repository:  
-[https://github.com/sushila51-bot/Business_Management_Project.git](https://github.com/sushila51-bot/Business_Management_Project.git)
+[https://github.com/sushila51-bot/Business-Management-System](https://github.com/sushila51-bot/Business-Management-System)
 
 Import the project inside STS/Eclipse:  
 
